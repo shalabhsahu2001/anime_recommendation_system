@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Modal from "./Modal";
 
+import axiosInstance from "../axiosInstance";
+
 const LoginModal = ({ onClose }) => {
   const [username, setUsername]   = useState("");
   const [password, setPassword]   = useState("");
@@ -10,7 +12,7 @@ const LoginModal = ({ onClose }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/auth/login/", {
+      const response = await axios.post("https://anime-recommendation-systemxtage-frontend.onrender.com/api/auth/login/", {
         username,
         password,
       });

@@ -11,7 +11,7 @@ const RegisterModal = ({ onClose }) => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/auth/register/", {
+      const response = await axios.post("https://anime-recommendation-systemxtage-frontend.onrender.com/api/auth/register/", {
         username,
         email,
         password,
