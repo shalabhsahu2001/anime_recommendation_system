@@ -36,6 +36,7 @@ This project provides a REST API for the Anime Recommendation System. It lets us
     python manage.py migrate
 
 5. **run server**
+    ```bash
     python manage.py runserver 0.0.0.0:8000
 
 REST API Endpoints
@@ -116,22 +117,23 @@ REST API Endpoints
 Build the Docker Images:
 From the project root (where your docker-compose.yml resides):
     ```bash
-        docker-compose build
-
-Run the Containers:
-Start all the services (backend, frontend, and database):
+        docker-compose build ```
+##Run the Containers:
+##Start all the services (backend, frontend, and database):
     ```bash
         docker-compose up
+    ```
 
 **Docker image links**
 
 Frontend: shalabh2002/anime_recommendation_systemxtage-frontend 
  ```bash
   docker pull shalabh2002/anime_recommendation_systemxtage-frontend
-
+ ```
 Backend: shalabh2002/anime_recommendation_systemxtage-backend
  ```bash
     docker pull shalabh2002/anime_recommendation_systemxtage-backend
+```
 
 
 
