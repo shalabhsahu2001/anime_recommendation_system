@@ -41,57 +41,22 @@ This project provides a REST API for the Anime Recommendation System. It lets us
 
 REST API Endpoints
 
-1. Get Anime Recommendations
+## 1. Get Anime Recommendations
     Endpoint: GET /api/recommendations/
 
     Description: Retrieves a list of recommended anime.
 
     Response: Returns an array of anime objects.
 
-    Example :
-    GET http://localhost:8000/api/recommendations/
-    Response = 
-[
-  {
-    "id": 1,
-    "title": "Naruto",
-    "genre": "Action, Adventure",
-    "score": 8.1,
-    "description": "A story about a young ninja and his journey to become Hokage."
-  },
-  {
-    "id": 2,
-    "title": "One Piece",
-    "genre": "Adventure, Fantasy",
-    "score": 8.9,
-    "description": "The adventures of Monkey D. Luffy and his pirate crew."
-  }
-]
-
-
-2. Get Anime Details
+## 2. Get Anime Details
     Endpoint: GET /api/anime/<id>/
 
     Description: Retrieves detailed information about a specific anime by its ID.
 
     Response: Returns an anime object with details such as title, genre, score, description, episodes, etc.
 
-    Example: GET http://localhost:8000/api/anime/1/
 
-    Response =
-        {
-            "id": 1,
-            "title": "Naruto",
-            "genre": "Action, Adventure",
-            "score": 8.1,
-            "description": "Naruto Uzumaki, a young ninja, seeks recognition and dreams of becoming the Hokage.",
-            "episodes": 220,
-            "rating": "PG-13"
-        }
-
-
-
-3. Search Anime
+## 3. Search Anime
 
     Endpoint: GET /api/search/
 
@@ -103,7 +68,7 @@ REST API Endpoints
 
     Response: Returns an array of matching anime objects.
 
-4. Add New Recommendation
+## 4. Add New Recommendation
     Endpoint: POST /api/recommendations/
 
     Description: Submits a new anime recommendation.
@@ -114,12 +79,15 @@ REST API Endpoints
 
 **How to run docker**
 
-Build the Docker Images:
-From the project root (where your docker-compose.yml resides):
+## Build the Docker Images:
+## From the project root (where your docker-compose.yml resides):
+
     ```bash
         docker-compose build ```
-##Run the Containers:
-##Start all the services (backend, frontend, and database):
+
+## Run the Containers:
+## Start all the services (backend, frontend, and database):
+
     ```bash
         docker-compose up
     ```
