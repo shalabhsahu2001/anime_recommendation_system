@@ -39,16 +39,16 @@ This project provides a REST API for the Anime Recommendation System. It lets us
     ```bash
     python manage.py runserver 0.0.0.0:8000
 
-REST API Endpoints
+## REST API Endpoints
 
-## 1. Get Anime Recommendations
+### 1. Get Anime Recommendations
     Endpoint: GET /api/recommendations/
 
     Description: Retrieves a list of recommended anime.
 
     Response: Returns an array of anime objects.
 
-## 2. Get Anime Details
+### 2. Get Anime Details
     Endpoint: GET /api/anime/<id>/
 
     Description: Retrieves detailed information about a specific anime by its ID.
@@ -56,7 +56,7 @@ REST API Endpoints
     Response: Returns an anime object with details such as title, genre, score, description, episodes, etc.
 
 
-## 3. Search Anime
+### 3. Search Anime
 
     Endpoint: GET /api/search/
 
@@ -68,7 +68,7 @@ REST API Endpoints
 
     Response: Returns an array of matching anime objects.
 
-## 4. Add New Recommendation
+### 4. Add New Recommendation
     Endpoint: POST /api/recommendations/
 
     Description: Submits a new anime recommendation.
@@ -77,10 +77,10 @@ REST API Endpoints
 
     Response: Returns the created anime recommendation object with an assigned ID and creation timestamp.
 
-**How to run docker**
+## How to run docker
 
-## Build the Docker Images:
-## From the project root (where your docker-compose.yml resides):
+### Build the Docker Images:
+### From the project root (where your docker-compose.yml resides):
 
     ```bash
         docker-compose build ```
