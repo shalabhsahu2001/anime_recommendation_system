@@ -4,6 +4,8 @@ This project provides a REST API for the Anime Recommendation System. It lets us
 
 # Hosted Link : https://anime-recommendation-systemxtage-frontend.onrender.com/
 
+## PS: Might take 30-40 Seconds to load as free tier of render is used 
+
 ## Local Setup and Running the Project
 
 ### Prerequisites
