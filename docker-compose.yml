@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=1         # if you want to set debug mode here
+      - SECRET_KEY=django-insecure-#l$(j!@h#u!eo@4qf=t+8wk_a5d_&ax&ze9szfm^r^1(74iqd$
+      - DATABASE_URL=postgresql://animeDB_owner:npg_eM8LftrYVnk0@ep-snowy-sea-a1idfgjh-pooler.ap-southeast-1.aws.neon.tech/animeDB?sslmode=require
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"  # Expose container's port 80 at host port 3000
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:13
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=animeDB_owner
+      - POSTGRES_PASSWORD=npg_eM8LftrYVnk0
+      - POSTGRES_DB=animeDB
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
