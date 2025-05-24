@@ -12,7 +12,7 @@ const LoginModal = ({ onClose }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://anime-recommendation-systemxtage-frontend.onrender.com/api/auth/login/", {
+      const response = await axios.post("https://anime-recommendation-systemxtage-backend.onrender.com/api/auth/login/", {
         username,
         password,
       });

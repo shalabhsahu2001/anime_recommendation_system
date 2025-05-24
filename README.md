@@ -19,7 +19,7 @@ This project provides a REST API for the Anime Recommendation System. It lets us
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/shalabhsahu2001/PARTH.git
+   git clone https://github.com/shalabhsahu2001/anime_recommendation_system.git
    cd backend #for backend
    cd frontend #for frontend
 

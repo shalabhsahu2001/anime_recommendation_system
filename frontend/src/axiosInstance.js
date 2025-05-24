@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://anime-recommendation-systemxtage-frontend.onrender.com/api", // Replace or adjust if needed.
+  baseURL: "https://anime-recommendation-systemxtage-backend.onrender.com/api", // Replace or adjust if needed.
 });
 
 axiosInstance.interceptors.request.use(

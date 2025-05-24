@@ -15,6 +15,7 @@ from rest_framework import status
 import requests
 
 class UserRegistrationView(generics.CreateAPIView):
+    permission_classes=[AllowAny]
     queryset = User.objects.all()
     serializer_class = UserRegistrationSerializer
 
