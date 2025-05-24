@@ -79,13 +79,13 @@ REST API Endpoints
 
     Response =
         {
-        "id": 1,
-        "title": "Naruto",
-        "genre": "Action, Adventure",
-        "score": 8.1,
-        "description": "Naruto Uzumaki, a young ninja, seeks recognition and dreams of becoming the Hokage.",
-        "episodes": 220,
-        "rating": "PG-13"
+            "id": 1,
+            "title": "Naruto",
+            "genre": "Action, Adventure",
+            "score": 8.1,
+            "description": "Naruto Uzumaki, a young ninja, seeks recognition and dreams of becoming the Hokage.",
+            "episodes": 220,
+            "rating": "PG-13"
         }
 
 
@@ -117,17 +117,21 @@ Build the Docker Images:
 From the project root (where your docker-compose.yml resides):
     ```bash
         docker-compose build
+
 Run the Containers:
 Start all the services (backend, frontend, and database):
     ```bash
         docker-compose up
-        
+
 **Docker image links**
 
 Frontend: shalabh2002/anime_recommendation_systemxtage-frontend 
- # docker pull shalabh2002/anime_recommendation_systemxtage-frontend
+ ```bash
+  docker pull shalabh2002/anime_recommendation_systemxtage-frontend
+
 Backend: shalabh2002/anime_recommendation_systemxtage-backend
- # docker pull shalabh2002/anime_recommendation_systemxtage-backend
+ ```bash
+    docker pull shalabh2002/anime_recommendation_systemxtage-backend
 
 
 
