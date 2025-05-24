@@ -81,25 +81,20 @@ This project provides a REST API for the Anime Recommendation System. It lets us
 
 ### Build the Docker Images:
 ### From the project root (where your docker-compose.yml resides):
-
-    ```bash
-        docker-compose build ```
+        docker-compose build
 
 ## Run the Containers:
 ## Start all the services (backend, frontend, and database):
-
-    ```bash
         docker-compose up
-    ```
 
 **Docker image links**
 
 Frontend: shalabh2002/anime_recommendation_systemxtage-frontend 
- ```bash
+```bash
   docker pull shalabh2002/anime_recommendation_systemxtage-frontend
- ```
+```
 Backend: shalabh2002/anime_recommendation_systemxtage-backend
- ```bash
+```bash
     docker pull shalabh2002/anime_recommendation_systemxtage-backend
 ```
 
