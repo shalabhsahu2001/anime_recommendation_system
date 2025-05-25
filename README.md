@@ -100,6 +100,10 @@ Backend: shalabh2002/anime_recommendation_systemxtage-backend
     docker pull shalabh2002/anime_recommendation_systemxtage-backend
 ```
 
+⚠️ Backend Hosting Notice:
+This project uses Render's free tier to host the backend, which goes to sleep after 15 minutes of inactivity. If the API takes 20–30 seconds to respond initially, it is due to the cold start delay. Please wait a moment or refresh the request.
+
+
 
 
 
